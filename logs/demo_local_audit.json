@@ -1,0 +1,84 @@
+{
+  "rs2_audit_log": true,
+  "events": [
+    {
+      "seq": 1,
+      "timestamp": "2026-05-08T23:39:20.902206Z",
+      "event": "identity_registered",
+      "data": {
+        "rs2_version": "0.1",
+        "identity_id": "drone-001",
+        "governing_authority": "urn:liverion:authority:inl-uav-center",
+        "created_at": "2026-05-08T23:39:20.901768Z",
+        "lifecycle_state": "active",
+        "jurisdiction": "US-ID",
+        "metadata": {
+          "platform": "UAV",
+          "operator": "INL-UAV-Center"
+        }
+      }
+    },
+    {
+      "seq": 2,
+      "timestamp": "2026-05-08T23:39:20.902421Z",
+      "event": "identity_registered",
+      "data": {
+        "rs2_version": "0.1",
+        "identity_id": "drone-002",
+        "governing_authority": "urn:liverion:authority:inl-uav-center",
+        "created_at": "2026-05-08T23:39:20.902398Z",
+        "lifecycle_state": "active",
+        "jurisdiction": "US-ID",
+        "metadata": {
+          "platform": "UAV",
+          "operator": "INL-UAV-Center"
+        }
+      }
+    },
+    {
+      "seq": 3,
+      "timestamp": "2026-05-08T23:39:20.902576Z",
+      "event": "identity_registered",
+      "data": {
+        "rs2_version": "0.1",
+        "identity_id": "drone-003",
+        "governing_authority": "urn:liverion:authority:inl-uav-center",
+        "created_at": "2026-05-08T23:39:20.902559Z",
+        "lifecycle_state": "active",
+        "jurisdiction": "US-ID",
+        "metadata": {
+          "platform": "UAV",
+          "operator": "INL-UAV-Center"
+        }
+      }
+    },
+    {
+      "seq": 4,
+      "timestamp": "2026-05-08T23:39:20.902824Z",
+      "event": "revocation_issued",
+      "data": {
+        "governance_envelope": "urn:liverion:envelope:inl-uav-demo",
+        "issuing_authority": "urn:liverion:authority:inl-uav-center",
+        "metadata": {
+          "reason": "INL RS2 demonstration revocation"
+        },
+        "revocation_id": "rev-inl-demo-001",
+        "rs2_version": "0.1",
+        "scope": {
+          "jurisdictions": [
+            "US-ID"
+          ],
+          "object_types": [
+            "identity"
+          ]
+        },
+        "targets": [
+          "drone-002"
+        ],
+        "temporal": {
+          "effective_at": "2026-05-08T23:39:20.902788Z"
+        }
+      }
+    }
+  ]
+}
