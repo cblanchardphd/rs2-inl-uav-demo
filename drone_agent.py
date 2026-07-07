@@ -23,16 +23,14 @@ import sys
 from datetime import datetime, timezone
 
 # ---- Locate RS2 modules -----------------------------------------------------
+# The RS2 identity/revocation constructors ship bundled in ./rs2.
 _HERE = os.path.dirname(os.path.abspath(__file__))
-_RS2_CANONICAL = os.path.abspath(os.path.join(_HERE, "..", "00-Canonical", "RS2"))
 _RS2_LOCAL = os.path.join(_HERE, "rs2")
 
-if os.path.isdir(_RS2_CANONICAL):
-    sys.path.insert(0, _RS2_CANONICAL)
-elif os.path.isdir(_RS2_LOCAL):
+if os.path.isdir(_RS2_LOCAL):
     sys.path.insert(0, _RS2_LOCAL)
 else:
-    sys.exit("RS2 modules not found. Run setup.sh first.")
+    sys.exit("RS2 modules not found — expected the bundled ./rs2 package next to this script.")
 
 from identity.constructors import new_identity
 from revocation.constructors import new_revocation_event, new_scope, new_temporal

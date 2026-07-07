@@ -27,7 +27,8 @@ This is the thesis: an autonomous vehicle's identity can be revoked at runtime, 
 Proves the RS2 logic without any Raspberry Pi or network.
 
 ```bash
-cd 04-INL-UAV-Demo
+git clone https://github.com/cblanchardphd/rs2-inl-uav-demo.git
+cd rs2-inl-uav-demo
 python3 demo_local.py
 ```
 
@@ -45,11 +46,13 @@ This is the fastest way to verify the RS2 implementation runs correctly before t
 ### Step 1 — Build the Pi deployment package (run once, on your laptop)
 
 ```bash
-cd 04-INL-UAV-Demo
+cd rs2-inl-uav-demo
 bash package_for_pi.sh
 ```
 
-This creates `rs2-inl-uav-demo.zip` — a self-contained package with all RS2 modules included.
+This creates `rs2-inl-uav-demo.zip` — a self-contained package with the bundled RS2
+engine included. (A prebuilt copy is also attached to the latest GitHub Release, so
+you can skip this step and download `rs2-inl-uav-demo.zip` directly.)
 
 ### Step 2 — Deploy to each Raspberry Pi
 
@@ -110,7 +113,7 @@ The agent is now listening for ground station commands on port 9200.
 ### Step 6 — Start the ground station on the operator's laptop
 
 ```bash
-cd 04-INL-UAV-Demo
+cd rs2-inl-uav-demo
 python3 ground_station.py 192.168.1.101 192.168.1.102 192.168.1.103
 ```
 
@@ -201,6 +204,7 @@ The audit log file is written to `logs/ground_station_audit.json` on the laptop 
 | `drone_agent.py` | Runs on each Raspberry Pi; registers identity, handles revocation commands |
 | `ground_station.py` | Runs on operator's laptop; polls drones, issues revocations |
 | `audit_log.py` | Append-only JSON event log (shared by both agent and ground station) |
+| `rs2/` | Bundled RS2 engine — the Identity Object and Revocation Event constructors (stdlib only) |
 | `setup.sh` | One-time Pi setup script |
 | `package_for_pi.sh` | Builds `rs2-inl-uav-demo.zip` for Pi deployment |
 | `drone_config.json` | Per-Pi drone identity configuration (created by setup.sh) |

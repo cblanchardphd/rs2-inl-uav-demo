@@ -3,58 +3,58 @@
   "events": [
     {
       "seq": 1,
-      "timestamp": "2026-05-08T23:39:20.902206Z",
+      "timestamp": "2026-07-07T19:42:26.785489Z",
       "event": "identity_registered",
       "data": {
-        "rs2_version": "0.1",
+        "controller": "urn:liverion:authority:inl-uav-center",
+        "created_at": "2026-07-07T19:42:26.785298Z",
         "identity_id": "drone-001",
-        "governing_authority": "urn:liverion:authority:inl-uav-center",
-        "created_at": "2026-05-08T23:39:20.901768Z",
-        "lifecycle_state": "active",
         "jurisdiction": "US-ID",
+        "lifecycle_state": "active",
         "metadata": {
-          "platform": "UAV",
-          "operator": "INL-UAV-Center"
-        }
+          "operator": "INL-UAV-Center",
+          "platform": "UAV"
+        },
+        "rs2_version": "0.1"
       }
     },
     {
       "seq": 2,
-      "timestamp": "2026-05-08T23:39:20.902421Z",
+      "timestamp": "2026-07-07T19:42:26.785679Z",
       "event": "identity_registered",
       "data": {
-        "rs2_version": "0.1",
+        "controller": "urn:liverion:authority:inl-uav-center",
+        "created_at": "2026-07-07T19:42:26.785661Z",
         "identity_id": "drone-002",
-        "governing_authority": "urn:liverion:authority:inl-uav-center",
-        "created_at": "2026-05-08T23:39:20.902398Z",
-        "lifecycle_state": "active",
         "jurisdiction": "US-ID",
+        "lifecycle_state": "active",
         "metadata": {
-          "platform": "UAV",
-          "operator": "INL-UAV-Center"
-        }
+          "operator": "INL-UAV-Center",
+          "platform": "UAV"
+        },
+        "rs2_version": "0.1"
       }
     },
     {
       "seq": 3,
-      "timestamp": "2026-05-08T23:39:20.902576Z",
+      "timestamp": "2026-07-07T19:42:26.785805Z",
       "event": "identity_registered",
       "data": {
-        "rs2_version": "0.1",
+        "controller": "urn:liverion:authority:inl-uav-center",
+        "created_at": "2026-07-07T19:42:26.785793Z",
         "identity_id": "drone-003",
-        "governing_authority": "urn:liverion:authority:inl-uav-center",
-        "created_at": "2026-05-08T23:39:20.902559Z",
-        "lifecycle_state": "active",
         "jurisdiction": "US-ID",
+        "lifecycle_state": "active",
         "metadata": {
-          "platform": "UAV",
-          "operator": "INL-UAV-Center"
-        }
+          "operator": "INL-UAV-Center",
+          "platform": "UAV"
+        },
+        "rs2_version": "0.1"
       }
     },
     {
       "seq": 4,
-      "timestamp": "2026-05-08T23:39:20.902824Z",
+      "timestamp": "2026-07-07T19:42:26.785927Z",
       "event": "revocation_issued",
       "data": {
         "governance_envelope": "urn:liverion:envelope:inl-uav-demo",
@@ -76,7 +76,7 @@
           "drone-002"
         ],
         "temporal": {
-          "effective_at": "2026-05-08T23:39:20.902788Z"
+          "effective_at": "2026-07-07T19:42:26.785903Z"
         }
       }
     }
