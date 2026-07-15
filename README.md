@@ -221,6 +221,6 @@ RS2 (Risk-Surface Reduction Substrate) is a 10-primitive semantic identity subst
 
 The audit log produced here is the precursor to Liverion's cryptographic proof layer — currently in development — that makes every Revocation Event permanently non-repudiable and compliant with regulated audit requirements.
 
-**39 U.S. Patents Pending — Perkins Coie**
+**39 U.S. Patents Pending — Ashurst Perkins Coie**
 
 Contact: Chris Blanchard, Ph.D. | chris@liverion.io | +1-208-392-8726
