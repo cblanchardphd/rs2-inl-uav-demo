@@ -14,6 +14,14 @@ This is the thesis: an autonomous vehicle's identity can be revoked at runtime, 
 
 ---
 
+## Why This Matters
+
+The bottleneck on every stranded deployment — metro edge compute, middle-mile drones — is inheritable accountability across a boundary, not compute. RS2 is that rail. The FAA's Part 108 right-of-way deadlock is live, dated proof that the boundary-accountability problem — who holds authority, who is liable, and who can prove it when an autonomous system crosses a jurisdiction — is the thing holding an entire industry at the gate.
+
+This demo exercises that primitive at its sharpest edge: revoking a drone's authority mid-flight, provably, without touching its flight controls.
+
+---
+
 ## Requirements
 
 - Python 3.8 or later (standard on Raspberry Pi OS Bullseye and later)
